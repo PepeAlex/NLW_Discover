@@ -11,6 +11,8 @@
     <!-- CSS -->
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/room.css">
+    <link rel="stylesheet" href="styles/modal.css">
+
 
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
@@ -55,7 +57,7 @@
                     <div class="question-wrapper">
                         <div class="question-content">
                             <div class="user">
-                                <img src="assets/Avatar.svg">
+                                <img src="assets/user.svg">
                             </div>
                             <div class="question">
                                 <p>What is the different between const, var and let in JavaScript</p>
@@ -72,12 +74,83 @@
                             </a>
                         </div>
                     </div>
+                    <div class="question-wrapper">
+                        <div class="question-content">
+                            <div class="user">
+                                <img src="assets/user.svg">
+                            </div>
+                            <div class="question">
+                                <p>What is Script</p>
+                            </div>
+                        </div>
+                        <div class="actions">
+                            <a href="#" class="check">
+                                <img src="assets/check.svg" alt="Mark as read">
+                                Mark as read
+                            </a>
+                            <a href="#" class="delete">
+                                <img src="assets/trash.svg" alt="Delete">
+                                Delete
+                            </a>
+                        </div>
+                    </div>
+                    <div class="question-wrapper">
+                        <div class="question-content">
+                            <div class="user">
+                                <img src="assets/user.svg">
+                            </div>
+                            <div class="question">
+                                <p>Do you know what you need to improve to achieve your next master level </p>
+                            </div>
+                        </div>
+                        <div class="actions">
+                            <a href="#" class="check">
+                                <img src="assets/check.svg" alt="Mark as read">
+                                Mark as read
+                            </a>
+                            <a href="#" class="delete">
+                                <img src="assets/trash.svg" alt="Delete">
+                                Delete
+                            </a>
+                        </div>
+                    </div>
+                    <div class="question-wrapper read">
+                        <div class="question-content">
+                            <div class="user">
+                                <img src="assets/user.svg">
+                            </div>
+                            <div class="question">
+                                <p>What is type Script</p>
+                            </div>
+                        </div>
+                        <div class="actions">
+                        
+                            <a href="#" class="delete">
+                                <img src="assets/trash.svg" alt="Delete">
+                                Delete
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </section>
 
         </main>
     </div>
+    <div class="modal-wrapper">
+        <div class="modal">
+            <h2>Delete Question</h2>
+            <p>Are you sure you would like to delete</p>
 
+            <form action="#">
+                <label class="sr-only" for-id="password">Type your password</label>
+                <input type="password" name="password" placeholder="Password" >
 
+                <div class="buttons">
+                    <div class="button grey">Cancel</div>
+                    <button class="red">Yes, delete</button>
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
