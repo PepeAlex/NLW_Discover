@@ -1,12 +1,12 @@
 <section>
-    <h2>Join as visitor</h2>
-    <form action="">
-        <label class="sr-only" for="room-id">Room Code</label>
-        <input type="number" id="room-id" placeholder="Room Code">
+    <h2>Join as friend</h2>
+    <form action="/enterroom" method="POST">
+        <label class="sr-only" for="room-id">Room code</label>
+        <input name="roomId" type="number" id="room-id" placeholder="Room code">
         <button>
-            <img src="images/enter-room.svg" alt="Enter room">
-            Enter in the room
-        </button>
+            <img src="images/enter-room.svg" alt="Enter">
+            Enter
+         </button>
     </form>
 </section>
 
@@ -17,10 +17,9 @@
 </div>
 
 <section>
-    <h2>Create your own room</h2>
-    <a href="/create-pass" class="button outlined">
-        <img src="images/users.svg" alt="Create Room">
-        Create Room 
-    </a>
-    
+     <h2>Create your own room easily</h2>
+     <a href="/create-pass" class="button outlined">
+        <img src="images/users.svg" alt="Create room"> 
+        Create room                      
+     </a>
 </section>
